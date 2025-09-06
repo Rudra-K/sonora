@@ -20,12 +20,12 @@ class TrainingConfig:
     CHECKPOINT_DIR = Path("/content/drive/MyDrive/Sonora_Checkpoints")
     
     LEARNING_RATE = 1e-4
-    BATCH_SIZE = 16
+    BATCH_SIZE = 8
     NUM_EPOCHS = 100
     
     RESUME_CHECKPOINT = None 
     
-    MODEL_CHANNELS = 64
+    MODEL_CHANNELS = 32
     CHANNEL_MULTS = (1, 2, 4)
     TIMESTEPS = 1000
 
