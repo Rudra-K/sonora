@@ -12,8 +12,9 @@ class TextConditioner:
         logging.info("Model loaded successfully.")
 
     def encode(self, captions):
-        embeddings = self.model.encode(captions, convert_to_tensor=True)
-        return embeddings.to(self.device)
+        with torch.no_grad():
+            embeddings = self.model.encode(captions, convert_to_tensor=True)
+        return embeddings.detach().clone().to(self.device)
 
 if __name__ == '__main__':
     conditioner = TextConditioner()
