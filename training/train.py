@@ -23,7 +23,7 @@ class TrainingConfig:
     BATCH_SIZE = 8
     NUM_EPOCHS = 100
     
-    RESUME_CHECKPOINT = None 
+    RESUME_CHECKPOINT = "/content/drive/MyDrive/Sonora_Checkpoints/sonora_epoch_95.pth" 
     
     MODEL_CHANNELS = 32
     CHANNEL_MULTS = (1, 2, 4)
